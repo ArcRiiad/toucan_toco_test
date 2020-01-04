@@ -1,0 +1,23 @@
+language: node_js
+
+node_js:
+  - "12.13.1"
+
+services:
+  - docker
+
+before_install:
+  - docker login $REGISTRY -u $CI_REGISTRY_LOGIN -p $CI_REGISTRY_PASS
+
+jobs:
+  include:
+    - stage: "Test"
+      name: "Unit Test"
+      script:
+        - npm install && npm test
+    - stage: "Build"
+      if: branch = master
+      name: "Building the Docker image"
+      script:
+        - docker build -t $REGISTRY/$CI_REGISTRY_LOGIN/toucan_tocot_test:latest .
+        - docker push $REGISTRY/$CI_REGISTRY_LOGIN/toucan_tocot_test:latest
