@@ -2,11 +2,11 @@ const fs = require('fs');
 
 module.exports = {
   development: {
-    username: process.env.DB_USERNAME_DEVELOPMENT,
-    password: process.env.DB_PASSWORD_DEVELOPMENT,
-    database: process.env.DB_NAME_DEVELOPMENT,
-    host: process.env.DB_HOSTNAME_DEVELOPMENT,
-    port: process.env.DB_PORT_DEVELOPMENT,
+    username: process.env.DB_USERNAME_DEVELOPMENT || 'toucan',
+    password: process.env.DB_PASSWORD_DEVELOPMENT || 'toucan',
+    database: process.env.DB_NAME_DEVELOPMENT || 'toucanToco',
+    host: process.env.DB_HOSTNAME_DEVELOPMENT || 'localhost',
+    port: process.env.DB_PORT_DEVELOPMENT || '4306',
     dialect: 'mysql',
     logging: false
   },
