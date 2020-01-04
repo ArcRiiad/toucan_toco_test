@@ -68,12 +68,12 @@ This project is shipped with CI/CD, every time you commit on master, a new docke
 To run the docker image:
 
 ```sh
-$  docker run \                                                                                        arch@EliteBook-840-G2
--e DB_NAME_DEVELOPMENT='toucanToco' \
--e DB_PASSWORD_DEVELOPMENT='toucan' \
--e DB_USERNAME_DEVELOPMENT='toucan' \
--e DB_PORT_DEVELOPMENT='4307' \
--e DB_HOSTNAME_DEVELOPMENT='192.168.1.94' \
+$  docker run \
+-e DB_NAME_DEVELOPMENT='YOUR_DATABASE' \
+-e DB_PASSWORD_DEVELOPMENT='YOUR_PASSWORD' \
+-e DB_USERNAME_DEVELOPMENT='YOUR_USERNAME' \
+-e DB_PORT_DEVELOPMENT='YOUR_PORT' \
+-e DB_HOSTNAME_DEVELOPMENT='YOUR_IP' \
 -p 5000:3000 archcom/toucan_tocot_test:latest
 ```
 
