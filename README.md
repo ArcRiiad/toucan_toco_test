@@ -6,7 +6,7 @@ This repository contain the project of Toucan-Toco Test.
 
 ## API doc
 
-[Node.js](https://documenter.getpostman.com/view/1681785/SWLe6ncy?version=latest)
+[Doc](https://documenter.getpostman.com/view/1681785/SWLe6ncy?version=latest)
 
 ## Environment variables
 
