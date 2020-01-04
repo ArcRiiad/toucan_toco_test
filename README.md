@@ -21,6 +21,7 @@ Please ensure all these Env variables are setup before creating an issue on Gith
 | DB_PASSWORD_X | Database password                             |
 | DB_NAME_X     | Database name                                 |
 | DB_HOSTNAME_X | Database remote Host                          |
+| DB_PORT_X     | Database port Host                            |
 | NODE_ENV      | Env Type (Production/Development/Test)        |
 | PORT          | Application port (default 3000, Not required) |
 
