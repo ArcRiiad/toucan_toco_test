@@ -6,7 +6,7 @@
     "start": "node ./initMigration.js && node ./bin/www"
   },
   "dependencies": {
-    "@hapi/joi": "^17.0.0",
+    "@hapi/joi": "^17.1.1",
     "@sentry/node": "^5.10.2",
     "debug": "~2.6.9",
     "express": "~4.16.1",
